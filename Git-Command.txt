@@ -1,0 +1,18 @@
+========== Git Commands: ===========
+
+Working Directory: Local Direcory : Remote Directory
+git config --list
+
+// for User Config
+git config --global user.name "sajedul2022"
+git config --global user.email=sajedul.idb.info@gmail.com
+
+pwd  // Present Directory
+touch readme.md
+git status
+git init
+ls // list show 
+ls -a // hidden file show
+git add --all / git add .(Present Directory, Not Sub folder add, But Root Directory is fine) / git add filename
+
+
