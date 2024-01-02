@@ -34,6 +34,9 @@ git branch -d dev/add-heading-text // delete branch
 git switch dev/add-heading-text // switch another branch
 git branch -m feature/add-heading-text // rename branch 
 
+git branch feature/fix-text
+git switch feature/fix-text
+
 // Merge Branch 
 git switch master
 git merge feature/add-heading-text
