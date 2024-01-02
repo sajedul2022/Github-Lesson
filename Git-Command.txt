@@ -30,3 +30,7 @@ git rm help.md // remove file
 // Branch
 git branch --list // show list
 git branch dev/add-heading-text // create branch as master sub branch
+git switch dev/add-heading-text // switch another branch
+git switch master
+
+
