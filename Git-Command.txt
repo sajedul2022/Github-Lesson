@@ -36,10 +36,50 @@ git branch -m feature/add-heading-text // rename branch
 
 // Merge Branch 
 git switch master
-<<<<<<< HEAD
 git merge feature/add-heading-text
-=======
-git merge dev/add-heading-text
->>>>>>> feature/add-heading-text
+
+// conflict
+show both branch code and edit 
+git add .
+git commit 
+:wq
+
+// Stash: switch another branch without commiting
+git stash
+// later show or add 
+git stash list 
+git stash show -p
+:q
+git stash pop
+git stash apply stashId
+git add .
+git commit 
+
+// git ignore 
+mkdir node_modules
+touch .gitignore
+
+// already coomit file , need to ignore
+git rm --cached abcd.md
+git diff .gitignore
+
+======== Git hub ======
+
+// create a new repository on the command line
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sajedul2022/Github-Lesson.git
+git push -u origin main
+
+// push an existing repository from the command line
+
+git remote add origin https://github.com/sajedul2022/Github-Lesson.git
+git branch -M main
+git push -u origin main
+
+
 
 
