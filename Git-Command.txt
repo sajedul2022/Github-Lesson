@@ -14,5 +14,6 @@ git init
 ls // list show 
 ls -a // hidden file show
 git add --all / git add .(Present Directory, Not Sub folder add, But Root Directory is fine) / git add filename
-
+git commit -m "New file readme and Git command handnote file created"
+git log/ git log --oneline  // History for comment
 
