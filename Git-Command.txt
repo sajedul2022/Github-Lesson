@@ -36,10 +36,24 @@ git branch -m feature/add-heading-text // rename branch
 
 // Merge Branch 
 git switch master
-<<<<<<< HEAD
 git merge feature/add-heading-text
-=======
-git merge dev/add-heading-text
->>>>>>> feature/add-heading-text
 
+// conflict
+show both branch code and edit 
+git add .
+git commit 
+:wq
 
+// Stash: switch another branch without commiting
+git stash
+// later show or add 
+git stash list 
+git stash show -p
+:q
+git stash pop
+git stash apply stashId
+git add .
+git commit 
+
+// git ignore 
+mkdir node_modules
