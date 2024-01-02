@@ -16,4 +16,17 @@ ls -a // hidden file show
 git add --all / git add .(Present Directory, Not Sub folder add, But Root Directory is fine) / git add filename
 git commit -m "New file readme and Git command handnote file created"
 git log/ git log --oneline  // History for comment
+vi readme.md // :q for close
+touch help.md
 
+// revert previous comment:
+
+git reset --hard a1f5460 // revert previous comment and Id head 
+git reflog // show all comment ID
+git reset --hard 8c4adf9 // revert code with comment id
+
+git rm help.md // remove file 
+
+// Branch
+git branch --list // show list
+git branch dev/add-heading-text // create branch as master sub branch
