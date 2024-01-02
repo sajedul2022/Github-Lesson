@@ -1,3 +1,3 @@
 ##Git Command List
 
-Simple header created for demo.
+Simple header created for demos. 
