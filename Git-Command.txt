@@ -64,6 +64,7 @@ touch .gitignore
 
 // already coomit file , need to ignore
 git rm --cached abcd.md
+git rm --cached node_modules
 git diff .gitignore
 
 ======== Git hub ======
@@ -83,6 +84,10 @@ git remote add origin https://github.com/sajedul2022/Github-Lesson.git
 git branch -M main
 git push -u origin main
 
+
+// update data after push, merge pull request
+
+git pull
 
 
 
