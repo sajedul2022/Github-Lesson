@@ -36,6 +36,10 @@ git branch -m feature/add-heading-text // rename branch
 
 // Merge Branch 
 git switch master
+<<<<<<< HEAD
 git merge feature/add-heading-text
+=======
+git merge dev/add-heading-text
+>>>>>>> feature/add-heading-text
 
 
