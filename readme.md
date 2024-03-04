@@ -4,9 +4,10 @@ bash Working Directory: Local Direcory : Remote Directory
 
 ```bash git config --list ```
 
-# // for User Config
-git config --global user.name "sajedul2022"
-git config --global user.email=sajedul.idb.info@gmail.com
+# For User Config
+```bash git config --global user.name "sajedul2022" ```
+
+```bash git config --global user.email=sajedul.idb.info@gmail.com ```
 
 # pwd  // Present Directory
 touch readme.md
