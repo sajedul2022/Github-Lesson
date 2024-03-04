@@ -31,114 +31,145 @@ bash Working Directory: Local Direcory : Remote Directory
 
 ```bash touch help.md ```
 
-# // revert previous comment:
+# Revert previous comment:
 
-git reset --hard a1f5460 // revert previous comment and Id head 
-git reflog // show all comment ID
-git reset --hard 8c4adf9 // revert code with comment id
+```bash  git reset --hard a1f5460 // revert previous comment and Id head ```
 
-git rm help.md // remove file 
+```bash  git reflog // show all comment ID ```
 
-# // Branch
-git branch --list // show list
-git branch dev/add-heading-text // create branch as master sub branch
-git branch -d dev/add-heading-text // delete branch
-git switch dev/add-heading-text // switch another branch
-git branch -m feature/add-heading-text // rename branch 
+```bash  git reset --hard 8c4adf9 // revert code with comment id ```
 
-git branch feature/fix-text
-git switch feature/fix-text
+```bash  git rm help.md // remove file ```
 
-# // Merge Branch 
-git switch master
-git merge feature/add-heading-text
+# Branch
+```bash  git branch ``` --list // show list
 
-# // conflict
+```bash  git branch dev/add-heading-text ``` // create branch as master sub branch
+
+```bash  git branch -d dev/add-heading-text  ``` // delete branch
+
+```bash git switch dev/add-heading-text  ``` // switch another branch
+
+```bash  git branch -m feature/add-heading-text ``` // rename branch 
+
+```bash  git branch feature/fix-text ```
+
+```bash  git switch feature/fix-text ```
+
+# Merge Branch 
+```bash  git switch master ```
+
+```bash  git merge feature/add-heading-text ```
+
+# conflict
 show both branch code and edit 
-git add .
-git commit 
-:wq
+```bash  git add . ```
 
-# // Stash: switch another branch without commiting
-git stash 
+```bash  git commit ```
 
-# // later show or add 
-git stash list 
-git stash show -p
-:q
-git stash pop
-git stash apply stashId
-git add .
-git commit 
+```bash  :wq ```
 
-# // git ignore 
-mkdir node_modules
-touch .gitignore
+# Stash: switch another branch without committing
+```bash git stash  ```
 
-# // already coomit file , need to ignore
-git rm --cached abcd.md
-git rm --cached node_modules
-git diff .gitignore
+# Later show or add 
+```bash  git stash list ```
 
-# ======== Git hub ======
+```bash  git stash show -p ```
 
-# // create a new repository on the command line
+```bash  :q ```
 
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/sajedul2022/Github-Lesson.git
-git push -u origin main
+```bash  git stash pop ```
 
-# // push an existing repository from the command line
+```bash  git stash apply stashId ```
 
-git remote add origin https://github.com/sajedul2022/Github-Lesson.git
-git branch -M main
-git push -u origin main
+```bash git add . ```
+
+```bash  git commit  ```
+
+#  git ignore 
+```bash  mkdir node_modules ```
+
+```bash  touch .gitignore ```
+
+# already commit file, need to ignore
+```bash  git rm --cached abcd.md ```
+
+```bash  git rm --cached node_modules ```
+
+```bash git diff .gitignore ```
+
+# Git hub : create a new repository on the command line
+
+```bash  git init ```
+
+```bash git add README.md ```
+
+```bash git commit -m "first commit" ```
+
+```bash git branch -M main ```
+
+```bash git remote add origin https://github.com/sajedul2022/Github-Lesson.git ```
+
+```bash git push -u origin main ```
+
+# push an existing repository from the command line
+
+```bash  git remote add origin https://github.com/sajedul2022/Github-Lesson.git ```
+
+```bash git branch -M main ```
+
+```bash git push -u origin main  ```
 
 
-# // update data after push, merge pull request
+# update data after push, merge pull request
 
-git pull
+```bash  git pull ```
 
 
 # Docker summary command : 
 Dockerfile: 
 
-FROM node:alpine
-COPY . /app 
-WORKDIR /app
-CMD node app.js
+```bash  FROM node:alpine ```
+
+```bash  COPY . /app ```
+
+```bash  WORKDIR /app ```
+
+```bash  CMD node app.js ```
 
 # docker version check
-docker version
+```bash  docker version ```
 
 # build: 
-docker build -t docter-test .
+```bash  docker build -t docter-test . ```
 
 # see images:
 
-docker images
-docker image ls
+```bash  docker images ```
+```bash  docker image ls ```
 
 # docker run
-docker run docter-test  // Folder name [docter-test]
+```bash  docker run docter-test ```   // Folder name [docter-test]
 
 # docker hub Online Repo Local to Dockerhub push
 
-docker login 
-docker tag 7f51a5914209 sajedul2022/docter-test
-docker images
-docker push sajedul2022/docter-test
+```bash  docker login ```
+```bash  docker tag 7f51a5914209 sajedul2022/docter-test ```
+```bash  docker images ```
+```bash  docker push sajedul2022/docter-test ```
 
-# pull Others computer / docker / pc / online play etc
+# pull Others computer/docker/pc/online play etc.
 
 Like: https://labs.play-with-docker.com/
 
-docker version
-docker images
-docker pull sajedul2022/docter-test:latest
-docker images
-docker run sajedul2022/docter-test
+```bash  docker version ```
+
+```bash  docker images ```
+
+```bash  docker pull sajedul2022/docter-test:latest ```
+
+```bash  docker images ```
+
+```bash  docker run sajedul2022/docter-test ```
 
