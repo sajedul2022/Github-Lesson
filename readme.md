@@ -1,6 +1,7 @@
 # Git Command List
 
-```bash Working Directory: Local Direcory : Remote Directory ```
+bash Working Directory: Local Direcory : Remote Directory
+
 ```bash git config --list ```
 
 # // for User Config
