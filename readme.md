@@ -2,7 +2,9 @@
 
 bash Working Directory: Local Direcory : Remote Directory
 
-```bash git config --list ```
+```bash 
+git config --list
+```
 
 # For User Config
 ```bash git config --global user.name "sajedul2022" ```
