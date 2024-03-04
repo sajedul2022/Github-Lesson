@@ -1,7 +1,7 @@
 # Git Command List
 
-Working Directory: Local Direcory : Remote Directory
-git config --list
+```bash Working Directory: Local Direcory : Remote Directory ```
+```bash git config --list ```
 
 # // for User Config
 git config --global user.name "sajedul2022"
