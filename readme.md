@@ -9,17 +9,27 @@ bash Working Directory: Local Direcory : Remote Directory
 
 ```bash git config --global user.email=sajedul.idb.info@gmail.com ```
 
-# pwd  // Present Directory
-touch readme.md
-git status
-git init
-ls // list show 
-ls -a // hidden file show
-git add --all / git add .(Present Directory, Not Sub folder add, But Root Directory is fine) / git add filename
-git commit -m "New file readme and Git command handnote file created"
-git log/ git log --oneline  // History for comment
-vi readme.md // :q for close
-touch help.md
+# pwd- Present Directory
+
+```bash touch readme.md  ```
+
+```bash git status ```
+
+```bash git init ```
+
+```bash ls // list show  ```
+
+```bash ls -a // hidden file show ```
+
+```bash git add --all / git add .(Present Directory, Not Sub folder add, But Root Directory is fine) / git add filename ```
+
+```bash git commit -m "New file readme and Git command handnote file created" ```
+
+```bash git log/ git log --oneline  // History for comment ```
+
+```bash vi readme.md // :q for close ```
+
+```bash touch help.md ```
 
 # // revert previous comment:
 
