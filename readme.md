@@ -8,11 +8,11 @@ git config --list
 
 # For User Config
 ```bash 
-git config --global user.name "sajedul2022" 
+git config --global user.name "user" 
 ```
 
 ```bash 
-git config --global user.email=sajedul.idb.info@gmail.com 
+git config --global user.email=sz@gmail.com 
 ```
 
 # pwd- Present Directory
