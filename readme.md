@@ -1,16 +1,13 @@
-##Git Command List
-
-Simple header created for pratices. 
-Simple header created for demos. 
+# Git Command List
 
 Working Directory: Local Direcory : Remote Directory
 git config --list
 
-// for User Config
+# // for User Config
 git config --global user.name "sajedul2022"
 git config --global user.email=sajedul.idb.info@gmail.com
 
-pwd  // Present Directory
+# pwd  // Present Directory
 touch readme.md
 git status
 git init
@@ -22,7 +19,7 @@ git log/ git log --oneline  // History for comment
 vi readme.md // :q for close
 touch help.md
 
-// revert previous comment:
+# // revert previous comment:
 
 git reset --hard a1f5460 // revert previous comment and Id head 
 git reflog // show all comment ID
@@ -30,7 +27,7 @@ git reset --hard 8c4adf9 // revert code with comment id
 
 git rm help.md // remove file 
 
-// Branch
+# // Branch
 git branch --list // show list
 git branch dev/add-heading-text // create branch as master sub branch
 git branch -d dev/add-heading-text // delete branch
@@ -40,19 +37,20 @@ git branch -m feature/add-heading-text // rename branch
 git branch feature/fix-text
 git switch feature/fix-text
 
-// Merge Branch 
+# // Merge Branch 
 git switch master
 git merge feature/add-heading-text
 
-// conflict
+# // conflict
 show both branch code and edit 
 git add .
 git commit 
 :wq
 
-// Stash: switch another branch without commiting
-git stash
-// later show or add 
+# // Stash: switch another branch without commiting
+git stash 
+
+# // later show or add 
 git stash list 
 git stash show -p
 :q
@@ -61,18 +59,18 @@ git stash apply stashId
 git add .
 git commit 
 
-// git ignore 
+# // git ignore 
 mkdir node_modules
 touch .gitignore
 
-// already coomit file , need to ignore
+# // already coomit file , need to ignore
 git rm --cached abcd.md
 git rm --cached node_modules
 git diff .gitignore
 
-======== Git hub ======
+# ======== Git hub ======
 
-// create a new repository on the command line
+# // create a new repository on the command line
 
 git init
 git add README.md
@@ -81,20 +79,21 @@ git branch -M main
 git remote add origin https://github.com/sajedul2022/Github-Lesson.git
 git push -u origin main
 
-// push an existing repository from the command line
+# // push an existing repository from the command line
 
 git remote add origin https://github.com/sajedul2022/Github-Lesson.git
 git branch -M main
 git push -u origin main
 
 
-// update data after push, merge pull request
+# // update data after push, merge pull request
 
 git pull
 
 
-##Docker summary command : 
-# Dockerfile
+# Docker summary command : 
+Dockerfile: 
+
 FROM node:alpine
 COPY . /app 
 WORKDIR /app
@@ -131,4 +130,3 @@ docker pull sajedul2022/docter-test:latest
 docker images
 docker run sajedul2022/docter-test
 
-docker pull sajedul2022/docter-test:latest
